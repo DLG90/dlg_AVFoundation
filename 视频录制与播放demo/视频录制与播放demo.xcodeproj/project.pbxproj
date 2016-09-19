@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		710B64231D7D1CBE00A0E925 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 710B64221D7D1CBE00A0E925 /* main.m */; };
+		710B64261D7D1CBE00A0E925 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 710B64251D7D1CBE00A0E925 /* AppDelegate.m */; };
+		710B642E1D7D1CBE00A0E925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710B642D1D7D1CBE00A0E925 /* Assets.xcassets */; };
+		710B64311D7D1CBE00A0E925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710B642F1D7D1CBE00A0E925 /* LaunchScreen.storyboard */; };
+		710B643B1D7D1D7200A0E925 /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710B64391D7D1D7200A0E925 /* RecordingViewController.m */; };
+		710B643C1D7D1D7200A0E925 /* RecordingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710B643A1D7D1D7200A0E925 /* RecordingViewController.xib */; };
+		710B64411D7D1E6700A0E925 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710B643F1D7D1E6700A0E925 /* PlayerViewController.m */; };
+		710B64421D7D1E6700A0E925 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710B64401D7D1E6700A0E925 /* PlayerViewController.xib */; };
+		710B644B1D7D1FF800A0E925 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 710B64491D7D1FF800A0E925 /* RootViewController.m */; };
+		710B644C1D7D1FF800A0E925 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710B644A1D7D1FF800A0E925 /* RootViewController.xib */; };
+		710B64501D7D391E00A0E925 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 710B644F1D7D391E00A0E925 /* PlayerView.m */; };
+		710EBF3D1D7E5627004E8F69 /* ButtomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 710EBF3C1D7E5627004E8F69 /* ButtomView.m */; };
+		710EBF3F1D7E5659004E8F69 /* ButtomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 710EBF3E1D7E5659004E8F69 /* ButtomView.xib */; };
+		7113EAAE1D7FC12100427C04 /* dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7113EAAC1D7FC12100427C04 /* dot@2x.png */; };
+		7113EAAF1D7FC12100427C04 /* dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7113EAAD1D7FC12100427C04 /* dot@3x.png */; };
+		7113EAB11D7FE9BF00427C04 /* playSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7113EAB01D7FE9BF00427C04 /* playSmall@2x.png */; };
+		7113EAB91D7FEE7B00427C04 /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7113EAB81D7FEE7B00427C04 /* pause@2x.png */; };
+		7A4CD80B1D8C150D00AC1D3B /* DLGFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4CD80A1D8C150D00AC1D3B /* DLGFocusView.m */; };
+		7ADFD6071D8E283D003EEFAD /* DLGEyeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFD6061D8E283D003EEFAD /* DLGEyeView.m */; };
+		7ADFD60A1D8E7725003EEFAD /* DLGRecordBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFD6091D8E7725003EEFAD /* DLGRecordBtn.m */; };
+		7AE285F41D8FCBF200280B87 /* VideoSaveConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE285F31D8FCBF200280B87 /* VideoSaveConfig.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		710B641E1D7D1CBE00A0E925 /* 视频录制与播放demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "视频录制与播放demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		710B64221D7D1CBE00A0E925 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		710B64241D7D1CBE00A0E925 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		710B64251D7D1CBE00A0E925 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		710B642D1D7D1CBE00A0E925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		710B64301D7D1CBE00A0E925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		710B64321D7D1CBE00A0E925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		710B64381D7D1D7200A0E925 /* RecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingViewController.h; sourceTree = "<group>"; };
+		710B64391D7D1D7200A0E925 /* RecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingViewController.m; sourceTree = "<group>"; };
+		710B643A1D7D1D7200A0E925 /* RecordingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordingViewController.xib; sourceTree = "<group>"; };
+		710B643E1D7D1E6700A0E925 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		710B643F1D7D1E6700A0E925 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		710B64401D7D1E6700A0E925 /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
+		710B64481D7D1FF800A0E925 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		710B64491D7D1FF800A0E925 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		710B644A1D7D1FF800A0E925 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		710B644E1D7D391E00A0E925 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		710B644F1D7D391E00A0E925 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		710EBF3B1D7E5627004E8F69 /* ButtomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtomView.h; sourceTree = "<group>"; };
+		710EBF3C1D7E5627004E8F69 /* ButtomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtomView.m; sourceTree = "<group>"; };
+		710EBF3E1D7E5659004E8F69 /* ButtomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtomView.xib; sourceTree = "<group>"; };
+		7113EAAC1D7FC12100427C04 /* dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot@2x.png"; sourceTree = "<group>"; };
+		7113EAAD1D7FC12100427C04 /* dot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dot@3x.png"; sourceTree = "<group>"; };
+		7113EAB01D7FE9BF00427C04 /* playSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playSmall@2x.png"; sourceTree = "<group>"; };
+		7113EAB81D7FEE7B00427C04 /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
+		7A4CD8091D8C150D00AC1D3B /* DLGFocusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGFocusView.h; sourceTree = "<group>"; };
+		7A4CD80A1D8C150D00AC1D3B /* DLGFocusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGFocusView.m; sourceTree = "<group>"; };
+		7ADFD6051D8E283D003EEFAD /* DLGEyeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGEyeView.h; sourceTree = "<group>"; };
+		7ADFD6061D8E283D003EEFAD /* DLGEyeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGEyeView.m; sourceTree = "<group>"; };
+		7ADFD6081D8E7725003EEFAD /* DLGRecordBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLGRecordBtn.h; sourceTree = "<group>"; };
+		7ADFD6091D8E7725003EEFAD /* DLGRecordBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLGRecordBtn.m; sourceTree = "<group>"; };
+		7AE285F21D8FCBF200280B87 /* VideoSaveConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSaveConfig.h; sourceTree = "<group>"; };
+		7AE285F31D8FCBF200280B87 /* VideoSaveConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoSaveConfig.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		710B641B1D7D1CBE00A0E925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		710B64151D7D1CBE00A0E925 = {
+			isa = PBXGroup;
+			children = (
+				710B64201D7D1CBE00A0E925 /* 视频录制与播放demo */,
+				710B641F1D7D1CBE00A0E925 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		710B641F1D7D1CBE00A0E925 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				710B641E1D7D1CBE00A0E925 /* 视频录制与播放demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		710B64201D7D1CBE00A0E925 /* 视频录制与播放demo */ = {
+			isa = PBXGroup;
+			children = (
+				710B644D1D7D38EC00A0E925 /* View */,
+				710B64431D7D1F0700A0E925 /* Resources */,
+				710B643D1D7D1D8600A0E925 /* Controller */,
+				710B64241D7D1CBE00A0E925 /* AppDelegate.h */,
+				710B64251D7D1CBE00A0E925 /* AppDelegate.m */,
+				710B642D1D7D1CBE00A0E925 /* Assets.xcassets */,
+				710B642F1D7D1CBE00A0E925 /* LaunchScreen.storyboard */,
+				710B64321D7D1CBE00A0E925 /* Info.plist */,
+				710B64211D7D1CBE00A0E925 /* Supporting Files */,
+			);
+			path = "视频录制与播放demo";
+			sourceTree = "<group>";
+		};
+		710B64211D7D1CBE00A0E925 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				710B64221D7D1CBE00A0E925 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		710B643D1D7D1D8600A0E925 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				710B64381D7D1D7200A0E925 /* RecordingViewController.h */,
+				710B64391D7D1D7200A0E925 /* RecordingViewController.m */,
+				710B643A1D7D1D7200A0E925 /* RecordingViewController.xib */,
+				710B643E1D7D1E6700A0E925 /* PlayerViewController.h */,
+				710B643F1D7D1E6700A0E925 /* PlayerViewController.m */,
+				710B64401D7D1E6700A0E925 /* PlayerViewController.xib */,
+				710B64481D7D1FF800A0E925 /* RootViewController.h */,
+				710B64491D7D1FF800A0E925 /* RootViewController.m */,
+				710B644A1D7D1FF800A0E925 /* RootViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		710B64431D7D1F0700A0E925 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7113EAB81D7FEE7B00427C04 /* pause@2x.png */,
+				7113EAB01D7FE9BF00427C04 /* playSmall@2x.png */,
+				7113EAAC1D7FC12100427C04 /* dot@2x.png */,
+				7113EAAD1D7FC12100427C04 /* dot@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		710B644D1D7D38EC00A0E925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				710B644E1D7D391E00A0E925 /* PlayerView.h */,
+				710B644F1D7D391E00A0E925 /* PlayerView.m */,
+				710EBF3B1D7E5627004E8F69 /* ButtomView.h */,
+				710EBF3C1D7E5627004E8F69 /* ButtomView.m */,
+				710EBF3E1D7E5659004E8F69 /* ButtomView.xib */,
+				7A4CD8091D8C150D00AC1D3B /* DLGFocusView.h */,
+				7A4CD80A1D8C150D00AC1D3B /* DLGFocusView.m */,
+				7ADFD6051D8E283D003EEFAD /* DLGEyeView.h */,
+				7ADFD6061D8E283D003EEFAD /* DLGEyeView.m */,
+				7ADFD6081D8E7725003EEFAD /* DLGRecordBtn.h */,
+				7ADFD6091D8E7725003EEFAD /* DLGRecordBtn.m */,
+				7AE285F21D8FCBF200280B87 /* VideoSaveConfig.h */,
+				7AE285F31D8FCBF200280B87 /* VideoSaveConfig.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		710B641D1D7D1CBE00A0E925 /* 视频录制与播放demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 710B64351D7D1CBE00A0E925 /* Build configuration list for PBXNativeTarget "视频录制与播放demo" */;
+			buildPhases = (
+				710B641A1D7D1CBE00A0E925 /* Sources */,
+				710B641B1D7D1CBE00A0E925 /* Frameworks */,
+				710B641C1D7D1CBE00A0E925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "视频录制与播放demo";
+			productName = "视频录制与播放demo";
+			productReference = 710B641E1D7D1CBE00A0E925 /* 视频录制与播放demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		710B64161D7D1CBE00A0E925 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = DLG;
+				TargetAttributes = {
+					710B641D1D7D1CBE00A0E925 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 710B64191D7D1CBE00A0E925 /* Build configuration list for PBXProject "视频录制与播放demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 710B64151D7D1CBE00A0E925;
+			productRefGroup = 710B641F1D7D1CBE00A0E925 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				710B641D1D7D1CBE00A0E925 /* 视频录制与播放demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		710B641C1D7D1CBE00A0E925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7113EAAE1D7FC12100427C04 /* dot@2x.png in Resources */,
+				710B643C1D7D1D7200A0E925 /* RecordingViewController.xib in Resources */,
+				710B64421D7D1E6700A0E925 /* PlayerViewController.xib in Resources */,
+				710B64311D7D1CBE00A0E925 /* LaunchScreen.storyboard in Resources */,
+				7113EAB11D7FE9BF00427C04 /* playSmall@2x.png in Resources */,
+				7113EAB91D7FEE7B00427C04 /* pause@2x.png in Resources */,
+				710B644C1D7D1FF800A0E925 /* RootViewController.xib in Resources */,
+				710EBF3F1D7E5659004E8F69 /* ButtomView.xib in Resources */,
+				710B642E1D7D1CBE00A0E925 /* Assets.xcassets in Resources */,
+				7113EAAF1D7FC12100427C04 /* dot@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		710B641A1D7D1CBE00A0E925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710EBF3D1D7E5627004E8F69 /* ButtomView.m in Sources */,
+				710B643B1D7D1D7200A0E925 /* RecordingViewController.m in Sources */,
+				710B64501D7D391E00A0E925 /* PlayerView.m in Sources */,
+				7A4CD80B1D8C150D00AC1D3B /* DLGFocusView.m in Sources */,
+				7ADFD6071D8E283D003EEFAD /* DLGEyeView.m in Sources */,
+				710B64411D7D1E6700A0E925 /* PlayerViewController.m in Sources */,
+				7AE285F41D8FCBF200280B87 /* VideoSaveConfig.m in Sources */,
+				710B64261D7D1CBE00A0E925 /* AppDelegate.m in Sources */,
+				710B64231D7D1CBE00A0E925 /* main.m in Sources */,
+				710B644B1D7D1FF800A0E925 /* RootViewController.m in Sources */,
+				7ADFD60A1D8E7725003EEFAD /* DLGRecordBtn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		710B642F1D7D1CBE00A0E925 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				710B64301D7D1CBE00A0E925 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		710B64331D7D1CBE00A0E925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		710B64341D7D1CBE00A0E925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		710B64361D7D1CBE00A0E925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "视频录制与播放demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dlg.-------demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		710B64371D7D1CBE00A0E925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "视频录制与播放demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dlg.-------demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		710B64191D7D1CBE00A0E925 /* Build configuration list for PBXProject "视频录制与播放demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				710B64331D7D1CBE00A0E925 /* Debug */,
+				710B64341D7D1CBE00A0E925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		710B64351D7D1CBE00A0E925 /* Build configuration list for PBXNativeTarget "视频录制与播放demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				710B64361D7D1CBE00A0E925 /* Debug */,
+				710B64371D7D1CBE00A0E925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 710B64161D7D1CBE00A0E925 /* Project object */;
+}
