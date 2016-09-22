@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RecordingViewController : UIViewController
-
+@property(nonatomic , copy)void(^getVideoURL)(NSURL *url);
 @end

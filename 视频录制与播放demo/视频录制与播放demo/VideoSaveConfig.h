@@ -10,6 +10,6 @@
 
 @interface VideoSaveConfig : NSObject
 + (NSString *)createNewVideo;
-+ (void)deleteVideo:(NSString *)videoPath;
++ (void)deleteVideo:(id)videoPath;
 + (void)saveThumImageWithVideoURL:(NSURL *)videoUrl second:(int64_t)second;
 @end

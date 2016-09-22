@@ -10,24 +10,32 @@
 #import "RecordingViewController.h"
 #import "PlayerViewController.h"
 @interface RootViewController ()
-
+{
+    NSURL *videoUrl;
+}
 @end
 
 @implementation RootViewController
 
 - (IBAction)RecordBtn:(UIButton *)sender {
     RecordingViewController *RVC=[[RecordingViewController alloc]init];
+    RVC.getVideoURL=^(NSURL *url){
+        videoUrl = url;
+        NSLog(@"%@",videoUrl);
+    };
     UINavigationController *CC=[[UINavigationController alloc]initWithRootViewController:RVC];
     [self presentViewController:CC animated:YES completion:nil];
 }
 
 - (IBAction)PlayerBtn:(id)sender {
     PlayerViewController *PVC=[[PlayerViewController alloc]init];
+    PVC.url=videoUrl;
     [self presentViewController:PVC animated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
 }
 

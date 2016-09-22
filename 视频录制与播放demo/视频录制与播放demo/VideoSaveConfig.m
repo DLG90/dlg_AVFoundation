@@ -41,10 +41,16 @@
     NSString * str        = [videoPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.MOV",videoName]];
     return str;
 }
-+ (void)deleteVideo:(NSString *)videoPath{
++ (void)deleteVideo:(id)videoPath{
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError       *error       = nil;
-    [fileManager removeItemAtPath:videoPath error:&error];
+    
+    if ([videoPath isKindOfClass:[NSString class]]) {
+        [fileManager removeItemAtPath:videoPath error:&error];
+    }
+    if ([videoPath isKindOfClass:[NSURL class]]) {
+        [fileManager removeItemAtURL:videoPath error:&error];
+    }
     if (error) {
         NSLog(@"删除视频失败：%@",error);
     }

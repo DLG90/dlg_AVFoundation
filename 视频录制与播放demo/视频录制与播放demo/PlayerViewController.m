@@ -21,8 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSURL * url=[NSURL URLWithString:@"http://play.68mtv.com:8080/play3/57548.mp4"];
-    _myPlayerView.playerUrl=url;
+//    NSURL * url=[NSURL URLWithString:@"http://play.68mtv.com:8080/play3/57548.mp4"];
+    if (self.url) {
+      _myPlayerView.playerUrl = self.url;
+    }else{
+        NSLog(@"请先录制视频！");
+    }
+    
 }
 
 

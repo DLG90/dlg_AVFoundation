@@ -522,9 +522,32 @@ typedef NS_ENUM(NSUInteger,VideoStatus){
         if (self.progressWidth.constant < SCREEN_WIDTH * 0.67) {
             //录制完成
             NSLog(@"录制完成！");
+            [self endAnimation];
+           
+            //保存视频
+            [self saveVideo:^(NSURL *outFileURL) {
+               
+                _assetWriterVideoInput = nil;
+                _assetWriterAudioInput = nil;
+                _assetWriterInputPixelBufferAdaptor = nil;
+                //退出当前控制器
+                if (self.getVideoURL) {
+                    self.getVideoURL(_outURL);
+                }
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }];
+            
+        }else{
+            NSLog(@"录制时间短，取消录制！");
+            [self endAnimation];
+             self.progressWidth.constant = SCREEN_WIDTH;
+            //删除保存的视频
+            [VideoSaveConfig deleteVideo:_outURL];
+            
         }
     }
-    [self endAnimation];
+    
+ 
     [self changeCancelLabelCondition:YES];
     self.changeOrientationBtn.hidden = self.flashBtn.hidden = NO;
 }
@@ -545,8 +568,22 @@ typedef NS_ENUM(NSUInteger,VideoStatus){
 {
     if (self.progressWidth.constant <= 0) {
         self.progressWidth.constant = 0;
-
+        NSLog(@"录制完成！！");
+        //录制完成
         [self endAnimation];
+        //保存视频
+       
+        [self saveVideo:^(NSURL *outFileURL) {
+            
+            _assetWriterVideoInput = nil;
+            _assetWriterAudioInput = nil;
+            _assetWriterInputPixelBufferAdaptor = nil;
+            //退出当前控制器
+            if (self.getVideoURL) {
+                self.getVideoURL(_outURL);
+            }
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }];
         return;
     }
     self.progressWidth.constant -= kTrans;
@@ -575,22 +612,11 @@ typedef NS_ENUM(NSUInteger,VideoStatus){
 {
     if (self.status == VideoStatusStart) {
         self.status = VideoStatusEnded;
-
         self.recordBtn.transform = CGAffineTransformIdentity;
         [self stopLink];//关闭定时器
-        self.progressWidth.constant = SCREEN_WIDTH;
-        
         //录制完成了
         _recoding = NO;
-        //保持视频
-        [self saveVideo:^(NSURL *outFileURL) {
-            [_captureSession stopRunning];
-            _assetWriter = nil;
-            _assetWriterVideoInput = nil;
-            _assetWriterAudioInput = nil;
-            _assetWriterInputPixelBufferAdaptor = nil;
-        }];
-
+        [_captureSession stopRunning];
     }
 }
 - (void)saveVideo:(void (^)(NSURL *outFileURL))complier{
@@ -603,6 +629,7 @@ typedef NS_ENUM(NSUInteger,VideoStatus){
     }
     dispatch_async(_recoding_queue, ^{
         [_assetWriter finishWritingWithCompletionHandler:^{
+             _assetWriter = nil;
             [VideoSaveConfig saveThumImageWithVideoURL:_outURL second:1];
             if (complier) {
                 complier(_outURL);
